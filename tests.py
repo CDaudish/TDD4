@@ -26,6 +26,9 @@ class TestCase(unittest.TestCase):
     def test7(self):
         self.assertFalse(check_pwd("aaaaaaaa"))
 
+    def test8(self):
+        self.assertFalse(check_pwd("aaaAAAaaaAAA"))
+
 
 if __name__ == '__main__':
     unittest.main()

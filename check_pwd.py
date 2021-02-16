@@ -19,4 +19,5 @@ def check_pwd(password):
   if isUpperCase == False:
     return False
 
+
   return True
