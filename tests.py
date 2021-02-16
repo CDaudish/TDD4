@@ -13,4 +13,11 @@ class TestCase(unittest.TestCase):
 
     def test3(self):
         self.assertFalse(check_pwd("123"))
+
+    def test4(self):
+        self.assertFalse(check_pwd("1234567890123456789012"))
+
+
+if __name__ == '__main__':
+    unittest.main()
     
