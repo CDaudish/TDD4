@@ -114,5 +114,11 @@ def check_pwd(password):
           atSign == False and exclaim == False and tilda == False and negate == False:
     return False
 
+  validChar = ['~','`','!','@','#','$','%','^','&','*','(',')','_','+','-','=']
+  for c in password:
+    if c.isnumeric() == False and c.islower() == False and c.isupper() == False and c not in validChar:
+        return False
+
+
 
   return True
