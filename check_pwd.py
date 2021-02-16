@@ -3,4 +3,10 @@ def check_pwd(password):
     return False
   if len(password) > 20:
     return False
+  isLowerCase = False
+  for c in password:
+    if c.islower() == True:
+      isLowerCase = True
+  if isLowerCase == False:
+    return False
   return True
