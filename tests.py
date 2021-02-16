@@ -24,6 +24,7 @@ class TestCase(unittest.TestCase):
         self.assertFalse(check_pwd("AAAAAAAAAA"))
 
     def test7(self):
+        self.assertFalse(check_pwd("aaaaaaaa"))
 
 
 if __name__ == '__main__':
