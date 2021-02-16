@@ -60,6 +60,11 @@ class TestCase(unittest.TestCase):
     def test18(self):
         self.assertTrue(check_pwd("aaaAAA123%a"))
 
+    def test19(self):
+        self.assertTrue(check_pwd("aaaAAA123$a"))
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
