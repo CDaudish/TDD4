@@ -26,5 +26,14 @@ def check_pwd(password):
   if isNumber == False:
     return False
 
+  equalSign = False
+  for c in password:
+    if c == "=":
+      equalSign = True
+
+
+  if equalSign == False:
+    return False
+
 
   return True
