@@ -66,14 +66,19 @@ def check_pwd(password):
     if c == "&":
       ampersand = True
 
+  upArrow = False
+  for c in password:
+    if c == "^":
+      upArrow = True
+
 
 
 
 
 
   if equalSign == False and minusSign == False and plusSign == False and underScore == False and  \
-          rightBrac == False and leftBrac == False and star == False and ampersand == False \
-          :
+          rightBrac == False and leftBrac == False and star == False and ampersand == False and \
+          upArrow == False:
     return False
 
 
