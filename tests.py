@@ -29,7 +29,12 @@ class TestCase(unittest.TestCase):
     def test8(self):
         self.assertFalse(check_pwd("aaaAAAaaaAAA"))
 
+    def test9(self):
+        self.assertFalse(check_pwd("aaaAAAaa111"))
+
 
 if __name__ == '__main__':
     unittest.main()
     
+
+#~`!@#$%^&*()_+-=
