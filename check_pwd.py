@@ -56,11 +56,18 @@ def check_pwd(password):
     if c == "(":
       leftBrac = True
 
+  star = False
+  for c in password:
+    if c == "*":
+      star = True
+
+
+
 
 
 
   if equalSign == False and minusSign == False and plusSign == False and underScore == False and  \
-          rightBrac == False and leftBrac == False:
+          rightBrac == False and leftBrac == False and star == False:
     return False
 
 
