@@ -72,6 +72,9 @@ class TestCase(unittest.TestCase):
     def test22(self):
         self.assertTrue(check_pwd("aaaAAA123!a"))
 
+    def test23(self):
+        self.assertTrue(check_pwd("aaaAAA123`a"))
+
 
 
 
@@ -82,4 +85,4 @@ if __name__ == '__main__':
     unittest.main()
     
 
-#~`!@#$%^&*()_+-=
+#~`!@#$%^&*()_+-=`
