@@ -79,7 +79,7 @@ class TestCase(unittest.TestCase):
         self.assertTrue(check_pwd("aaaAAA123~a"))
 
     def test25(self):
-        self.assertFalse(check_pwd("aaaAAA123-&h"))
+        self.assertFalse(check_pwd("aaaAAA123]&h"))
 
 
 
@@ -91,4 +91,4 @@ if __name__ == '__main__':
     unittest.main()
     
 
-#~`!@#$%^&*()_+-=`
+#~`!@#$%^&*()_+-=
