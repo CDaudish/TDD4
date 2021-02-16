@@ -71,6 +71,10 @@ def check_pwd(password):
     if c == "^":
       upArrow = True
 
+  remainder = False
+  for c in password:
+    if c == "%":
+      remainder = True
 
 
 
@@ -78,7 +82,7 @@ def check_pwd(password):
 
   if equalSign == False and minusSign == False and plusSign == False and underScore == False and  \
           rightBrac == False and leftBrac == False and star == False and ampersand == False and \
-          upArrow == False:
+          upArrow == False and remainder == False:
     return False
 
 
