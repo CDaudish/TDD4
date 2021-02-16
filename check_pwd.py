@@ -41,10 +41,15 @@ def check_pwd(password):
     if c == "+":
       plusSign = True
 
+  underScore = False
+  for c in password:
+    if c == "_":
+      underScore = True
 
 
 
-  if equalSign == False and minusSign == False and plusSign == False:
+
+  if equalSign == False and minusSign == False and plusSign == False and underScore == False:
     return False
 
 
