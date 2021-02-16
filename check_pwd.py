@@ -96,12 +96,17 @@ def check_pwd(password):
     if c == "!":
       exclaim = True
 
+  tilda = False
+  for c in password:
+    if c == "`":
+      tilda = True
+
 
 
   if equalSign == False and minusSign == False and plusSign == False and underScore == False and  \
           rightBrac == False and leftBrac == False and star == False and ampersand == False and \
           upArrow == False and remainder == False and moneySign == False and hashtag == False and \
-          atSign == False and exclaim == False:
+          atSign == False and exclaim == False and tilda == False:
     return False
 
 
