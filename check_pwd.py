@@ -19,5 +19,12 @@ def check_pwd(password):
   if isUpperCase == False:
     return False
 
+  isNumber = False
+  for c in password:
+    if c.isnumeric() == True:
+      isNumber = True
+  if isNumber == False:
+    return False
+
 
   return True
